@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/index.css">
+    <title>Responsive Navigation</title>
+</head>
+
+<body>
+
+    <div class="navmenu" id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="index.html">About Us</a>
+        <a href="index.html">Contact</a>
+        <a class="icon" onclick="burgerMenu()"><i class="fa fa-bars"></i>
+        </a>
+    </div>
+<h2 class="title">Responsive Navigation-Burger Menu</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quae. Quaerat unde ratione,
+        velit explicabo perspiciatis sunt laborum praesentium tempora.
+        Exercitationem eos quos voluptatem quia neque. Enim dignissimos exercitationem minima!</p>
+
+
+    <script>
+        function burgerMenu() {
+            let burger = document.getElementById("nav-menu");
+            if (burger.className === "navmenu") {
+                burger.className += " responsive";
+            } else {
+                burger.className = "navmenu";
+            }
+        }
+    </script>
+</body>
+
+</html>
